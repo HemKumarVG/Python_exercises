@@ -2,7 +2,7 @@
 
 
 def mul_table(num):
-    print (num * 1)
+    print (num, "x 1 =", num * 1)
     print (num * 2)
     print (num * 3)
     print (num * 4)
