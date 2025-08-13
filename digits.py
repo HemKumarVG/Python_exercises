@@ -1,7 +1,18 @@
 """ What does this program do ?
 Take 2 numbers from the user. Print which number is a 2 digit number, 
 and which number is a 3 digit number. If it is neither, then print the number as it is
+
+num1 = int(input("enter the num 1"))
+num2 = int(input("enter the num 2"))
+
+Below 3 lines are same
+#if num1 > 9 and num1 < 100:
+#if 9 < num1 and num1 < 100:
+if 9 < num1 < 100:
+print("2 digits number")
 """
+
+
 # Implement the helper functions here
 
 def perform_check(number):
@@ -15,11 +26,11 @@ def perform_check(number):
     # check_if_3digit to check if the number
     # matches the criteria and print accordingly
     if 9 < number < 100:
-        print("The number is 2 digit")
+        print(number, "is 2 digit")
     elif 99 < number < 1000:
-        print("The number is 3 digit")
+        print(number, "is 3 digit")
     else:
-        print("number")
+        print(number)
     
 def get_number():
     """ This function prompts the user for a number
